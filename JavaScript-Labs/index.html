@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio thực hành JavaScript của Trịnh Minh Phát – Lab 08, Lab 09 và Lab 10.">
+    <title>Trịnh Minh Phát | JavaScript Labs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-mark">JS</span>
+                <span>JavaScript<span class="logo-highlight">Labs</span></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Mở menu điều hướng" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home">Trang chủ</a>
+                <a href="#about">Giới thiệu</a>
+                <a href="#labs">Bài thực hành</a>
+                <a href="#skills">Kiến thức</a>
+                <a href="#reflection">Tự đánh giá</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Phần giới thiệu chính -->
+        <section class="hero" id="home">
+            <div class="hero-decoration decoration-one"></div>
+            <div class="hero-decoration decoration-two"></div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+                    <div class="status-label">
+                        <span class="status-dot"></span>
+                        STUDENT PORTFOLIO
+                    </div>
+
+                    <p class="hero-subtitle">XIN CHÀO, MÌNH LÀ</p>
+
+                    <h1>Trịnh Minh <span>Phát</span></h1>
+
+                    <h2>JavaScript Practice Portfolio</h2>
+
+                    <p class="hero-description">
+                        Chào mừng bạn đến với trang portfolio tổng hợp quá trình học tập
+                        và thực hành JavaScript của em. Đây là nơi lưu lại những kiến thức,
+                        kỹ năng và kết quả thực hiện qua ba bài Lab 08, Lab 09 và Lab 10
+                        trong học phần Phát triển ứng dụng thương mại điện tử.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#labs" class="btn btn-primary">
+                            Khám phá bài Lab <span>→</span>
+                        </a>
+
+                        <a href="#about" class="btn btn-outline">
+                            Tìm hiểu thêm
+                        </a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <div>
+                            <strong>03</strong>
+                            <span>Bài thực hành</span>
+                        </div>
+
+                        <div>
+                            <strong>29</strong>
+                            <span>Exercises</span>
+                        </div>
+
+                        <div>
+                            <strong>2026</strong>
+                            <span>Năm thực hiện</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ảnh cá nhân -->
+                <div class="hero-image-area">
+                    <div class="image-frame">
+                        <div class="image-top-label">MY PROFILE</div>
+
+                        <img src="images/hinh1.jpg"
+                             alt="Ảnh đại diện của Trịnh Minh Phát"
+                             class="profile-image"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+
+                        <div class="image-placeholder">
+                            <span>MP</span>
+                            <small>Đặt ảnh tại images/hinh1.jpg</small>
+                        </div>
+
+                        <div class="image-caption">
+                            <span class="caption-dot"></span>
+                            <span>Learning and Growing</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-top">
+                        <span class="floating-icon">&lt;/&gt;</span>
+                        <div>
+                            <strong>JavaScript</strong>
+                            <small>Web Development</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-bottom">
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>3 Labs</strong>
+                            <small>Practice Portfolio</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Thông tin sinh viên -->
+        <section class="section student-section" id="about">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-tag">ABOUT ME</span>
+                    <h2>Thông tin <span>sinh viên</span></h2>
+                    <p>Thông tin sinh viên thực hiện các bài thực hành JavaScript.</p>
+                </div>
+
+                <div class="student-card">
+                    <div class="student-avatar">MP</div>
+
+                    <div class="student-details">
+                        <h3>Trịnh Minh Phát</h3>
+                        <p class="student-role">Sinh viên UEH</p>
+
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span>HỌ VÀ TÊN</span>
+                                <strong>Trịnh Minh Phát</strong>
+                            </div>
+
+                            <div class="info-item">
+                                <span>MÃ SỐ SINH VIÊN</span>
+                                <strong>31241022342</strong>
+                            </div>
+
+                            <div class="info-item">
+                                <span>LỚP HỌC PHẦN</span>
+                                <strong>26C1INF50902701</strong>
+                            </div>
+
+                            <div class="info-item">
+                                <span>HỌC PHẦN</span>
+                                <strong>Phát triển ứng dụng thương mại điện tử</strong>
+                            </div>
+                        </div>
+
+                        <a class="github-link"
+                           href="https://github.com/minhphatrh"
+                           target="_blank"
+                           rel="noopener">
+                            ↗ GitHub cá nhân
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Giới thiệu mục tiêu -->
+        <section class="section introduction-section">
+            <div class="container intro-layout">
+
+                <div class="intro-heading">
+                    <span class="section-tag">OVERVIEW</span>
+                    <h2>Hành trình học <span>JavaScript</span></h2>
+                </div>
+
+                <div class="intro-text">
+                    <p>
+                        Ba bài thực hành JavaScript giúp em từng bước làm quen
+                        với ngôn ngữ lập trình JavaScript, từ những kiến thức
+                        nền tảng đến cách xây dựng các chức năng tương tác
+                        trên website. Nội dung được chia thành ba phần:
+                        JavaScript cơ bản, thao tác DOM và xử lý sự kiện,
+                        cuối cùng là sử dụng thư viện jQuery.
+                    </p>
+
+                    <p>
+                        JavaScript đóng vai trò quan trọng trong phát triển
+                        website vì giúp trang web có thể phản hồi thao tác
+                        của người dùng, kiểm tra dữ liệu, cập nhật nội dung
+                        và tạo hiệu ứng tương tác. Đối với website thương mại
+                        điện tử, JavaScript có thể hỗ trợ các chức năng như
+                        kiểm tra biểu mẫu đăng ký, cập nhật thông tin sản phẩm
+                        và thao tác với giỏ hàng.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Ba bài Lab -->
+        <section class="section labs-section" id="labs">
+            <div class="container">
+
+                <div class="section-heading center-heading">
+                    <span class="section-tag">MY PRACTICE</span>
+                    <h2>Các bài thực hành <span>JavaScript</span></h2>
+                    <p>
+                        Tổng hợp ba bài Lab cùng nội dung và kỹ năng
+                        em đã thực hành.
+                    </p>
+                </div>
+
+                <div class="lab-grid">
+
+                    <article class="lab-card">
+                        <div class="lab-card-top">
+                            <span class="lab-index">01 / LAB 08</span>
+                            <span class="lab-icon">JS</span>
+                        </div>
+
+                        <div class="lab-number">08</div>
+
+                        <h3>JavaScript 1</h3>
+                        <p class="lab-english">Language Foundations</p>
+
+                        <p class="lab-description">
+                            Tìm hiểu các kiến thức nền tảng của JavaScript,
+                            từ cú pháp, biến, kiểu dữ liệu đến hàm, mảng
+                            và đối tượng.
+                        </p>
+
+                        <div class="lab-topics">
+                            <span>Variables</span>
+                            <span>Functions</span>
+                            <span>Arrays</span>
+                            <span>Objects</span>
+                        </div>
+
+                        <a href="Lab08/index.html" class="lab-link">
+                            Xem nội dung Lab 08 <span>→</span>
+                        </a>
+                    </article>
+
+                    <article class="lab-card featured-card">
+                        <div class="lab-card-top">
+                            <span class="lab-index">02 / LAB 09</span>
+                            <span class="lab-icon">DOM</span>
+                        </div>
+
+                        <div class="lab-number">09</div>
+
+                        <h3>JavaScript 2</h3>
+                        <p class="lab-english">DOM and Events</p>
+
+                        <p class="lab-description">
+                            Thực hành lựa chọn, thay đổi các phần tử HTML,
+                            xử lý sự kiện người dùng và kiểm tra dữ liệu
+                            biểu mẫu.
+                        </p>
+
+                        <div class="lab-topics">
+                            <span>DOM</span>
+                            <span>Events</span>
+                            <span>Forms</span>
+                            <span>Validation</span>
+                        </div>
+
+                        <a href="Lab09/index.html" class="lab-link">
+                            Xem nội dung Lab 09 <span>→</span>
+                        </a>
+                    </article>
+
+                    <article class="lab-card">
+                        <div class="lab-card-top">
+                            <span class="lab-index">03 / LAB 10</span>
+                            <span class="lab-icon">JQ</span>
+                        </div>
+
+                        <div class="lab-number">10</div>
+
+                        <h3>JavaScript 3</h3>
+                        <p class="lab-english">jQuery</p>
+
+                        <p class="lab-description">
+                            Làm quen với thư viện jQuery, bộ chọn,
+                            xử lý sự kiện, thao tác DOM, hiệu ứng
+                            và gửi yêu cầu lấy dữ liệu.
+                        </p>
+
+                        <div class="lab-topics">
+                            <span>Selectors</span>
+                            <span>Effects</span>
+                            <span>GET</span>
+                            <span>jqXHR</span>
+                        </div>
+
+                        <a href="Lab10/index.html" class="lab-link">
+                            Xem nội dung Lab 10 <span>→</span>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Kiến thức đạt được -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-tag">WHAT I LEARNED</span>
+                    <h2>Kiến thức và kỹ năng <span>đạt được</span></h2>
+                    <p>
+                        Những nội dung quan trọng em đã tìm hiểu
+                        và thực hành qua từng bài Lab.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <div class="skill-number">01</div>
+                        <h3>JavaScript cơ bản</h3>
+                        <p class="skill-lab">LAB 08</p>
+
+                        <ul>
+                            <li>Nhúng JavaScript vào HTML và sử dụng file JS bên ngoài.</li>
+                            <li>Khai báo biến, kiểu dữ liệu, toán tử và cấu trúc điều khiển.</li>
+                            <li>Làm việc với String, Date, Math, Array và Object.</li>
+                            <li>Xây dựng hàm, sử dụng hàm và mảng các đối tượng.</li>
+                            <li>Sử dụng Browser Console để kiểm tra và tìm lỗi.</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-number">02</div>
+                        <h3>DOM và xử lý sự kiện</h3>
+                        <p class="skill-lab">LAB 09</p>
+
+                        <ul>
+                            <li>Sử dụng các phương thức DOM để lựa chọn phần tử HTML.</li>
+                            <li>Đọc và thay đổi nội dung, thuộc tính và kiểu hiển thị.</li>
+                            <li>Tạo, thêm và xóa phần tử HTML bằng JavaScript.</li>
+                            <li>Xử lý sự kiện click, mouseover, mouseout và load.</li>
+                            <li>Làm việc với biểu mẫu và kiểm tra dữ liệu nhập vào.</li>
+                            <li>Sử dụng debugger để theo dõi quá trình thực thi.</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-number">03</div>
+                        <h3>Thư viện jQuery</h3>
+                        <p class="skill-lab">LAB 10</p>
+
+                        <ul>
+                            <li>Thiết lập và sử dụng thư viện jQuery.</li>
+                            <li>Sử dụng bộ chọn cơ bản và nâng cao.</li>
+                            <li>Xử lý sự kiện bằng các phương thức của jQuery.</li>
+                            <li>Thêm, chèn và thao tác các phần tử DOM.</li>
+                            <li>Tạo hiệu ứng fade, slide và animate.</li>
+                            <li>Gửi yêu cầu GET và xử lý kết quả bằng jqXHR.</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Tự đánh giá -->
+        <section class="section reflection-section" id="reflection">
+            <div class="container reflection-layout">
+
+                <div class="reflection-title">
+                    <span class="section-tag">PERSONAL REFLECTION</span>
+                    <h2>Tự đánh giá sau khi <span>hoàn thành</span></h2>
+
+                    <div class="reflection-decoration">
+                        <span>“</span>
+                        <p>
+                            Học tập thông qua thực hành là cách
+                            để hiểu rõ hơn những kiến thức đã học.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reflection-content">
+                    <h3>Nhìn lại quá trình thực hành</h3>
+
+                    <p>
+                        Sau khi hoàn thành ba bài Lab, em đã học được nhiều kiến thức
+                        và kỹ thuật quan trọng trong JavaScript. Cụ thể, em hiểu cách
+                        khai báo biến, sử dụng hàm, mảng, đối tượng, thao tác với DOM,
+                        xử lý sự kiện và sử dụng jQuery để thay đổi nội dung cũng như
+                        tạo hiệu ứng cho website. Trong đó, Lab 09 là bài Lab em cảm
+                        thấy hữu ích nhất vì giúp em hiểu cách tương tác trực tiếp với
+                        các thành phần HTML và xử lý thao tác của người dùng. Tuy nhiên,
+                        việc xác định các phần tử DOM và xử lý sự kiện đôi lúc vẫn còn
+                        gây khó khăn. Những kiến thức đã học có thể được vận dụng để
+                        xây dựng các chức năng trong website thương mại điện tử như
+                        kiểm tra dữ liệu biểu mẫu đăng ký, thêm và xóa sản phẩm khỏi
+                        giỏ hàng, cập nhật thông tin sản phẩm, xử lý sự kiện khi nhấn
+                        nút và tạo hiệu ứng khi người dùng tương tác. Sau khi hoàn thành
+                        các bài thực hành, em nhận thấy bản thân cần tiếp tục cải thiện
+                        kỹ năng viết mã JavaScript, sử dụng jQuery, tư duy xử lý logic
+                        và khả năng phát hiện, sửa lỗi để có thể xây dựng những chức
+                        năng hoàn chỉnh hơn.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <a href="#home" class="logo footer-logo">
+                    <span class="logo-mark">JS</span>
+                    <span>JavaScript<span class="logo-highlight">Labs</span></span>
+                </a>
+
+                <p>
+                    Portfolio tổng hợp các bài thực hành JavaScript
+                    trong học phần Phát triển ứng dụng thương mại điện tử.
+                </p>
+            </div>
+
+            <div class="footer-info">
+                <p><strong>Trịnh Minh Phát</strong></p>
+                <p>MSSV: 31241022342</p>
+                <p>Lớp học phần: 26C1INF50902701</p>
+                <p>Giảng viên: TS Nguyễn Mạnh Tuấn</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Trịnh Minh Phát · JavaScript Labs Portfolio
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Lên đầu trang">
+        ↑
+    </button>
+
+</body>
+</html>
