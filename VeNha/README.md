@@ -1,7 +1,7 @@
 
 # Bài tập CSS – Buổi 3
 
-**Sinh viên:** Minh Phát  
+**Sinh viên:** Nguyễn Phan Thùy Duyên
 **Môn học:** Phát triển ứng dụng WEB/TMĐT  
 **Giảng viên:** TS. Nguyễn Mạnh Tuấn
 
